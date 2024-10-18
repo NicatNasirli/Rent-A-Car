@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #5c67f2;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.car {
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#car-container {
+    background-color: rgb(214, 225, 231);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1450px;
+    margin: auto;
+}
+
+.car img {
+    position: relative;
+    background-color: rgb(203, 203, 203);
+    width: 240px; 
+    height: 140px;
+    border-radius: 8px;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 10;
+}
+
+.form-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.toggle-btn.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
